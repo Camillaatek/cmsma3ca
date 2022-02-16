@@ -17,7 +17,13 @@ const App = () => {
       <ul>
         {data.length > 0
           ? data.map((item, idx) => {
-              return <li key={idx}>{item.attributes.name}</li>;
+              return (
+              <div className="league" key={idx}>
+                <div className="image">{item.attributes.image.url}</div>
+                <li>{item.attributes.name}</li>
+                <p>{item.attributes.description}</p>
+              </div>
+              )
             })
           : null}
       </ul>
