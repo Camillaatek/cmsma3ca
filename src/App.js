@@ -14,19 +14,16 @@ const App = () => {
 
   return (
     <>
-      <h1>Sugget</h1>
+      <h1>Suggested Items</h1>
       <ul>
         {data.length > 0
           ? data.map((item, idx) => {
               return (
               <div className="league" key={idx}>
-                
-               
                 <h3>{item.attributes.name}</h3>
                 <img className="image" src={item.attributes.image} />
                 <li>{item.attributes.description}</li>
                 <button>PURCHASE</button>
-                
               </div>
               )
             })
