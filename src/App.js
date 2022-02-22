@@ -21,8 +21,9 @@ const App = () => {
               return (
               <div className="league" key={idx}>
                 <h3>{item.attributes.name}</h3>
-                <img className="image" src={item.attributes.image} />
+                <img className="image" src={item.attributes.image_url} />
                 <li>{item.attributes.description}</li>
+                <p>Cost: {item.attributes.cost}</p>
                 <button>PURCHASE</button>
               </div>
               )

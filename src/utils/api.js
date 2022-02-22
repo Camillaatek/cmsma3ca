@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const BASE_URL = 'https://strapima3ca.herokuapp.com/api/';
-export const ITEMS_URL = 'restaurants';
+export const ITEMS_URL = 'restaurants/';
 export const POPULATE = '?populate=*';
 
 
